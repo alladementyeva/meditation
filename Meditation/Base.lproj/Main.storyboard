@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="97I-3Y-nru">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pc0-UM-sZ0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -43,7 +43,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-iR-SgE">
                                 <rect key="frame" x="84" y="557" width="246" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Наслаждайся отборочными.Будь внимателен.Делай хорошо.</string>
+                                <string key="text">Наслаждайся отборочными.
+Будь внимателен.
+Делай хорошо.</string>
                                 <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -69,7 +71,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="97I-3Y-nru" kind="show" id="5zr-UK-ckA"/>
+                                    <segue destination="97I-3Y-nru" kind="show" id="L7a-8V-NiU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Af-O2-nk8">
@@ -86,7 +88,11 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <color key="baseForegroundColor" name="white"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="iTe-VL-bkA" kind="show" id="V5E-Jc-phn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -108,7 +114,7 @@
             <objects>
                 <viewController id="iTe-VL-bkA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VOB-6z-Yk7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Тут будет регистрация" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NY-JI-dpA">
@@ -122,6 +128,7 @@
                         <viewLayoutGuide key="safeArea" id="fSc-EU-2bo"/>
                         <color key="backgroundColor" name="green"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bcx-Gj-nuF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKH-vr-9B9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,7 +163,7 @@
             <objects>
                 <viewController id="Qe4-fh-L0I" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PjR-Yz-BEX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Тут будет меню" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfY-f1-8LP">
@@ -170,6 +177,7 @@
                         <viewLayoutGuide key="safeArea" id="n1X-1Y-PGi"/>
                         <color key="backgroundColor" name="green"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zor-yL-dUW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo5-2J-pAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,7 +240,11 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <color key="baseForegroundColor" name="white"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="iTe-VL-bkA" kind="show" id="rfX-3M-7Nq"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowers" translatesAutoresizingMaskIntoConstraints="NO" id="af3-yQ-U5P">
                                 <rect key="frame" x="0.0" y="618" width="414" height="224"/>
@@ -276,37 +288,55 @@
                     <connections>
                         <outlet property="inputLogin" destination="qDj-KE-XMr" id="Wou-xx-ehv"/>
                         <outlet property="inputPassword" destination="e1l-89-ngg" id="t7Z-fx-IRa"/>
+                        <segue destination="oDh-tB-kjb" kind="show" identifier="segueToMain" id="Ujy-df-Wxt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpF-dP-DJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44.927536231884062" y="728.57142857142856"/>
+            <point key="canvasLocation" x="29" y="729"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="DsU-5h-4qW">
             <objects>
                 <viewController id="oDh-tB-kjb" customClass="MainViewController" customModule="Meditation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6nl-ZG-3hQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-Pc-Dk1">
-                                <rect key="frame" x="51" y="66" width="48" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="35" minY="75" maxX="33" maxY="33"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="hamburger"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="wgJ-ie-lUl">
-                                <rect key="frame" x="167" y="51" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="snK-t5-jez">
-                                <rect key="frame" x="330" y="66" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="С возвращением, Эмиль!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oO2-Gz-LkQ">
-                                <rect key="frame" x="25" y="139" width="325" height="41"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="pH9-0N-uHo">
+                                <rect key="frame" x="26.5" y="44" width="363.5" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-Pc-Dk1">
+                                        <rect key="frame" x="0.0" y="24" width="47.5" height="32"/>
+                                        <inset key="contentEdgeInsets" minX="35" minY="75" maxX="33" maxY="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hamburger"/>
+                                        <connections>
+                                            <segue destination="Qe4-fh-L0I" kind="show" id="iXv-ZP-VQZ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="wgJ-ie-lUl">
+                                        <rect key="frame" x="140.5" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="ESe-nn-fDe"/>
+                                            <constraint firstAttribute="height" constant="80" id="YzP-bM-CRT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="snK-t5-jez">
+                                        <rect key="frame" x="313.5" y="15" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="5o6-UQ-ELq"/>
+                                            <constraint firstAttribute="height" constant="50" id="D7g-qa-eZ6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="С возвращением, Эмиль!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oO2-Gz-LkQ">
+                                <rect key="frame" x="25" y="144" width="332" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="332" id="lBr-Gf-D6j"/>
+                                    <constraint firstAttribute="height" constant="41" id="zlU-yM-f6X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="30"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -318,10 +348,13 @@
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pp5-to-vrf">
-                                <rect key="frame" x="20" y="273" width="374" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="green"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pp5-to-vrf">
+                                <rect key="frame" x="20" y="230" width="374" height="119"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Ovv-V7-ZUH"/>
+                                    <constraint firstAttribute="height" constant="119" id="kn0-Sl-jQn"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HzL-ig-NHe">
                                     <size key="itemSize" width="85" height="85"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -329,26 +362,31 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HeH-xE-yYk">
-                                        <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="moodCell" id="HeH-xE-yYk" customClass="moodCVCell" customModule="Meditation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17" width="85" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KFv-C5-oh7">
                                             <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-Jr-N5J">
+                                                <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-Jr-N5J">
                                                     <rect key="frame" x="11" y="0.0" width="62" height="62"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N2r-uG-Zv6">
-                                                            <rect key="frame" x="11" y="11" width="40" height="60"/>
+                                                            <rect key="frame" x="11" y="11" width="40" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" name="white"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXb-oC-5Rv">
-                                                    <rect key="frame" x="0.0" y="64" width="84" height="21"/>
+                                                    <rect key="frame" x="1" y="64" width="84" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="12"/>
                                                     <color key="textColor" name="white"/>
@@ -356,13 +394,20 @@
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="name" destination="jXb-oC-5Rv" id="aSN-gE-6vH"/>
+                                            <outlet property="picture" destination="N2r-uG-Zv6" id="3eA-lz-5tC"/>
+                                            <outlet property="pictureBg" destination="A2Q-Jr-N5J" id="z2e-hM-l6o"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-4j-eBf">
-                                <rect key="frame" x="20" y="384" width="374" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-4j-eBf">
+                                <rect key="frame" x="20" y="350" width="374" height="151"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="bZb-aU-j6V"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2sY-Dp-SjN">
                                     <size key="itemSize" width="374" height="152"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -414,10 +459,16 @@
                         <viewLayoutGuide key="safeArea" id="2cs-Sv-dCc"/>
                         <color key="backgroundColor" name="green"/>
                         <constraints>
-                            <constraint firstItem="oO2-Gz-LkQ" firstAttribute="centerX" secondItem="2cs-Sv-dCc" secondAttribute="centerX" id="ThN-iO-5t9"/>
+                            <constraint firstItem="Pp5-to-vrf" firstAttribute="leading" secondItem="2cs-Sv-dCc" secondAttribute="leading" constant="20" id="4qI-xB-XbG"/>
+                            <constraint firstItem="wgJ-ie-lUl" firstAttribute="centerX" secondItem="2cs-Sv-dCc" secondAttribute="centerX" id="AVA-Kn-Oi9"/>
+                            <constraint firstItem="pH9-0N-uHo" firstAttribute="top" secondItem="2cs-Sv-dCc" secondAttribute="top" id="RP3-lL-gCz"/>
+                            <constraint firstItem="oO2-Gz-LkQ" firstAttribute="leading" secondItem="6nl-ZG-3hQ" secondAttribute="leading" constant="25" id="XIK-OV-gfQ"/>
+                            <constraint firstItem="Iuv-wI-9ih" firstAttribute="top" secondItem="oO2-Gz-LkQ" secondAttribute="bottom" constant="5" id="fwh-s0-rRt"/>
+                            <constraint firstItem="oO2-Gz-LkQ" firstAttribute="top" secondItem="2cs-Sv-dCc" secondAttribute="top" constant="100" id="gqF-Rc-pvH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Home" id="Qja-wy-TeN"/>
+                    <navigationItem key="navigationItem" id="WcI-5I-z68"/>
                     <connections>
                         <outlet property="userPicture" destination="snK-t5-jez" id="JAe-te-ZA2"/>
                     </connections>
@@ -432,6 +483,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pc0-UM-sZ0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rkO-r3-LVA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="green"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -445,6 +497,10 @@
             <point key="canvasLocation" x="769.56521739130437" y="728.57142857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ujy-df-Wxt"/>
+        <segue reference="rfX-3M-7Nq"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Home" width="220" height="173"/>
         <image name="background" width="375" height="812"/>

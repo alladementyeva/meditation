@@ -9,9 +9,14 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+private let reuseIdentifier = "moodCell"
+
+class MainViewController: UIViewController //, UICollectionViewDelegate, UICollectionViewDataSource
+{
 
     @IBOutlet weak var userPicture: UIImageView!
+    
+    let moods = ["Calm", "Relax", "Focus", "Anxious"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +25,20 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return moods.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! moodCVCell
+        
+        cell.name.text = moods[indexPath.row]
+        cell.picture.image = UIImage(named: cell.name.text!)
+        cell.pictureBg.backgroundColor = UIColor(named: "white")
+  
+        print( cell.name.text )
+        return cell
     }
-    
+
     /*
     // MARK: - Navigation
 
@@ -38,3 +50,4 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     */
 
 }
+ 

@@ -42,14 +42,17 @@ class SignInViewController: UIViewController {
         // authorization link:
         // http://mskko2021.mad.hakta.pro/api/user/login?email=\(inputLogin.text!)&password=\(inputPassword.text!)
         //
-        let url = "http://mskko2021.mad.hakta.pro/api/user/login"
+        let url = "https://mskko2021.mad.hakta.pro/api/user/login"
         
         let param: [String: String] =
         [
             "email": inputLogin.text!,
             "password": inputPassword.text!
-        ]
+        ] // [k31@ru.ru, 123]
         
+        // this doesn't work
+        // for HTTP the response reports that SECURE is required
+        // for HTTPS the response is that connection is not secure, do you want to connect anyway?
         AF.request(url, method: .post, parameters: param, encoder: JSONParameterEncoder.default).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
@@ -57,15 +60,24 @@ class SignInViewController: UIViewController {
                 let token = json["token"].stringValue
                 self.userDef.setValue(token, forKey: "userToken")
                 
+                // authorization is done
+                // go to Main screen
+                self.performSegue(withIdentifier: "segueToMain", sender: nil)
+                
             case .failure(let error):
+                /*
+                // response.data is nil, error constant contains the description
                 let errorJSON = JSON(response.data!)
-                let errorDescription = errorJSON["error"].stringValue
-                var message = errorDescription
-                if errorDescription == "" { message = "authorization failed" }
-                print( errorJSON )
-                self.showAlert(message: message)
+                let errorDescription = errorJSON["error"].stringValu
+                self.showAlert(message: errorDescription)
+                 */
+                
+                print( error )
+                self.showAlert(message: "Authorization failed")
             }
         }
+        
+        
     }
     
     func showAlert(message: String){

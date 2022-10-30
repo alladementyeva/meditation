@@ -27,6 +27,7 @@
 		CEA4DC1F290878A50023776D /* Alegreya-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA4DC14290878A50023776D /* Alegreya-Medium.ttf */; };
 		CEA4DC20290878A50023776D /* Alegreya-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA4DC15290878A50023776D /* Alegreya-BoldItalic.ttf */; };
 		CEA4DC22290A21FF0023776D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4DC21290A21FF0023776D /* MainViewController.swift */; };
+		CEA4DC24290A39660023776D /* moodCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4DC23290A39660023776D /* moodCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		CEA4DC14290878A50023776D /* Alegreya-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Medium.ttf"; sourceTree = "<group>"; };
 		CEA4DC15290878A50023776D /* Alegreya-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-BoldItalic.ttf"; sourceTree = "<group>"; };
 		CEA4DC21290A21FF0023776D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CEA4DC23290A39660023776D /* moodCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				CEA4DBEF29086F0B0023776D /* AppDelegate.swift */,
 				CEA4DBF129086F0B0023776D /* SceneDelegate.swift */,
 				CEA4DBF329086F0B0023776D /* SignInViewController.swift */,
+				CEA4DC23290A39660023776D /* moodCVCell.swift */,
 				CEA4DBF529086F0B0023776D /* Main.storyboard */,
 				CEA4DC21290A21FF0023776D /* MainViewController.swift */,
 				CEA4DBF829086F2B0023776D /* Assets.xcassets */,
@@ -216,6 +219,7 @@
 				CEA4DBF429086F0B0023776D /* SignInViewController.swift in Sources */,
 				CEA4DBF029086F0B0023776D /* AppDelegate.swift in Sources */,
 				CEA4DBF229086F0B0023776D /* SceneDelegate.swift in Sources */,
+				CEA4DC24290A39660023776D /* moodCVCell.swift in Sources */,
 				CEA4DC22290A21FF0023776D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
